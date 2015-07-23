@@ -33,7 +33,7 @@ function mainController($scope, $window, $location) {
 	    }
 	    else{
 	        // $location.path("homePage");
-	        $window.location.href('/homePage');
+	        $window.location.href = '/homePage.html';
 	    }
   };
  
