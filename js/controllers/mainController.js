@@ -2,7 +2,7 @@ var myApp = angular.module("myApp", ['ui.router']);
 myApp.config(function($stateProvider, $urlRouterProvider) {
 
   // For any unmatched url, send to /index
-  $urlRouterProvider.otherwise("/login");
+  //$urlRouterProvider.otherwise("/login");
 
   $stateProvider
     .state('login', {
@@ -32,7 +32,7 @@ function mainController($scope, $window, $location) {
 	       
 	    }
 	    else{
-	        $location.path('homePage');
+	        $location.path("homePage");
 	    }
   };
  
