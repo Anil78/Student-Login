@@ -32,7 +32,8 @@ function mainController($scope, $window, $location) {
 	       
 	    }
 	    else{
-	        $location.path("homePage");
+	        // $location.path("homePage");
+	        $window.location.href('homePage');
 	    }
   };
  
