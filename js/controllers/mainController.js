@@ -20,8 +20,8 @@ myApp.controller('mainController', ['$scope', '$window','$location', mainControl
 
 function mainController($scope, $window, $location) {
   $scope.title = 'Login Form'; 
-  $scope.currentPath=$location.path();
-  console.log($scope.currentPath);
+ // $scope.currentPath=$location.path();
+  console.log($window.location.host);
   $scope.submit = function() {
   	 var username = $scope.username;
   	 var password = $scope.password;
@@ -33,7 +33,7 @@ function mainController($scope, $window, $location) {
 	    }
 	    else{
 	        // $location.path("homePage");
-	        $window.location.href('homePage');
+	        $window.location.href('/homePage');
 	    }
   };
  
