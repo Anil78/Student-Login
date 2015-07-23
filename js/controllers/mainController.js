@@ -13,7 +13,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     .state('homePage', {
       url: "/homePage",
       templateUrl: "homePage.html",
-      controller: "mainController"
+     // controller: "mainController"
     });
 });
 myApp.controller('mainController', ['$scope', '$window','$location', mainController]);
